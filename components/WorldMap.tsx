@@ -81,7 +81,7 @@ const WorldMap: React.FC<WorldMapProps> = ({ stats, onLevelSelect, onOpenStats, 
                     <div className="bg-red-500 p-2 rounded-full text-white mb-2 shadow-lg animate-pulse">
                       <Lock size={32} />
                     </div>
-                    <p className="text-[10px] font-bold text-red-700 bg-white/80 px-2 py-1 rounded shadow-sm">
+                    <p className="text-[10px] font-bold text-red-700 bg-white/80 px-2 py-1 rounded shadow-sm leading-tight">
                       ¡NIVEL CANSADO! 🔋
                     </p>
                   </div>
@@ -97,7 +97,7 @@ const WorldMap: React.FC<WorldMapProps> = ({ stats, onLevelSelect, onOpenStats, 
 
                 {isUnlocked && !isTemporarilyLocked && (
                   <div className="mt-2 bg-white/30 px-3 py-1 rounded-full text-xs font-bold text-white uppercase tracking-wider">
-                    {level.table === 'mixed' ? 'MIXTO' : isRefuerzo ? 'PRACTICAR' : `Tabla del ${level.table}`}
+                    {level.table === 'mixed' ? 'MIXTO' : isRefuerzo ? 'REFUERZO' : `Tabla del ${level.table}`}
                   </div>
                 )}
               </div>
