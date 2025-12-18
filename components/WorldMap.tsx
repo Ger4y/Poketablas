@@ -47,7 +47,7 @@ const WorldMap: React.FC<WorldMapProps> = ({ stats, onLevelSelect, onOpenStats, 
         <div className="mb-8 bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-xl flex items-center gap-3">
           <Info className="text-blue-500 shrink-0" size={20} />
           <div className="text-sm text-blue-800 font-bold">
-            <p>🌟 Supera la Isla Refuerzo para desbloquear niveles cansados.</p>
+            <p>*Supera isla refuerzo para desbloquea niveles cansados.</p>
           </div>
         </div>
 
@@ -67,7 +67,7 @@ const WorldMap: React.FC<WorldMapProps> = ({ stats, onLevelSelect, onOpenStats, 
                   flex flex-col items-center p-6 rounded-3xl transition-all transform
                   ${isUnlocked && !isTemporarilyLocked ? `${level.color} shadow-lg hover:scale-105 active:scale-95` : 'bg-gray-200 grayscale opacity-50'}
                   border-b-8 ${isUnlocked && !isTemporarilyLocked ? 'border-black/20' : 'border-gray-400'}
-                  ${isRefuerzo ? 'border-dashed border-white/50' : ''}
+                  ${isRefuerzo ? 'border-dashed border-white/50 shadow-xl ring-4 ring-red-300 ring-offset-2' : ''}
                 `}
               >
                 {isCurrent && (
@@ -108,7 +108,7 @@ const WorldMap: React.FC<WorldMapProps> = ({ stats, onLevelSelect, onOpenStats, 
         {stats.temporarilyLockedLevels.length > 0 && (
           <div className="mt-8 bg-red-100 border-l-8 border-red-500 p-4 rounded-xl animate-pulse">
             <p className="text-red-700 font-bold flex items-center gap-2">
-              ⚠️ ¡Supera la 🩹 Isla Refuerzo para desbloquear los niveles cansados!
+              ⚠️ *Supera isla refuerzo para desbloquea niveles cansados.
             </p>
           </div>
         )}
