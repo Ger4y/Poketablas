@@ -2,7 +2,7 @@
 {
   "name": "MultiAventura: El Desafío de los Números",
   "short_name": "MultiAventura",
-  "description": "Una aventura épica para aprender las tablas de multiplicar diseñada para niños, con niveles, recompensas y mucha diversión.",
+  "description": "Una aventura epic para aprender las tablas de multiplicar diseñada para niños, con niveles, recompensas y mucha diversión.",
   "icons": [
     {
       "src": "public/logo.png",
@@ -17,7 +17,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fdf2f8",
   "theme_color": "#f472b6",
